@@ -8,15 +8,8 @@ const SIDE_CELLS_COUNT = 10;
 export default function GameBoard() {
     const [board, setBoard] = useState([]);
 
-    const resetBoard = () => {
-        let newBoard = [];
-        for (let lineIndex = 0; lineIndex < SIDE_CELLS_COUNT; lineIndex++) {
-            newBoard.push([]);
-            for (let colIndex = 0; colIndex < SIDE_CELLS_COUNT; colIndex++) {
-                newBoard[lineIndex][colIndex] = false;
-            }
-        }
-
+    const resetBoard = async () => {
+        let newBoard = await window.backend.generateBoard(SIDE_CELLS_COUNT);
         setBoard(newBoard);
     }
 
