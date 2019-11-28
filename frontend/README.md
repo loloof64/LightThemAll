@@ -6,4 +6,4 @@ Try to set all light lit.
 
 Some icons were downloaded from FlatIcon.
 
-* light-bulb by Creattica Creative Agency
+* lightbulb by Good Ware

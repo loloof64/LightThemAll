@@ -15,8 +15,8 @@ func main() {
   css := mewn.String("./frontend/build/static/css/main.css")
 
   app := wails.CreateApp(&wails.AppConfig{
-    Width:  1024,
-    Height: 768,
+    Width:  600,
+    Height: 600,
     Title:  "LightThemAll",
     JS:     js,
     CSS:    css,
